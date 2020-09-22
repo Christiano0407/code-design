@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --color-base: #fff;
+    --color-base-2: #e3e3e3e;
+    --color-primario: #D95284;
+    --color-secundario: #044BD9;
+    --color-terciario: #F27E63;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
