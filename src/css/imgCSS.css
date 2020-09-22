@@ -22,3 +22,19 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+img {
+    width: 60rem;
+    height: 30rem; 
+    object-fit: cover;
+}
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    /* overflow: hidden; */
+    border: 4px solid #000000;
+}
+.carousel-slider {
+    display: flex;
+    width: 100%;
+    height: 30rem;
+}
