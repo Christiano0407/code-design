@@ -22,3 +22,32 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+/* Pseudo-clases */
+
+/*  p:first-child {
+    color: blue;
+    font-size: 2rem;
+}
+p:last-child {
+    color: green;
+    font-size: 3rem;
+} */
+/* p:nth-child(1) {
+    color: yellow;
+    font-size: 4rem;
+}
+numero pares
+p:nth-child(2n) {
+    color: green;
+    font-size: 4rem;
+}
+numero impar
+p:nth-child(2n+1) {
+    color: blue;
+    font-size: 4rem;
+} */
+
+/* Pseudo-elementos
+::before
+::after */
