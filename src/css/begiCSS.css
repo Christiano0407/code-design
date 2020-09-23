@@ -36,3 +36,20 @@ header, form {
     justify-content: center;
     align-items: center;
 }
+form input, 
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #fff;
+}
+form button {
+    color: #D932BD;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover {
+    background: #D932BD;
+    color: #fff;
+}  
