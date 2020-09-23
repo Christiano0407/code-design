@@ -33,6 +33,7 @@ body {
     background-color: var(--color-secundario);
 }
 .expandMoreContent{
+    height: 2rem;
     overflow: hidden;
     transition: height 0.5s ease-in-out;
     position: relative;
