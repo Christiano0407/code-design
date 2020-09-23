@@ -15,3 +15,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     startBtn.addEventListener(`click`, countDown)
 })
+
+/* for each */
+let names = [ `Chris`, `Cader`, `Natasha` ];
+
+names.forEach(name => {
+    console.log(name + ` Is the Best`)
+});
