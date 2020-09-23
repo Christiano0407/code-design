@@ -20,3 +20,33 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.card {
+    width: 40rem;
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.placeholder-for-image {
+    width: 40rem;
+    height: 25rem;
+    background-color: var(--color-secundario);
+}
+.expandMoreContent{
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    position: relative;
+}
+.expandMoreContent.expand-active {
+height: auto;
+transition: height 0.5s ease-in-out;
+}
+.expandMoreHolder {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.btn-expand-more {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
