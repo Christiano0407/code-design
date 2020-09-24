@@ -19,5 +19,28 @@ body {
     height: 100vh;
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
+    font-style: normal; 
+   /*  background-image: linear-gradient(to top, #D93D66  0%, #D932BD 100%); */
+   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: neue-haas-unica,sans-serif;
+    font-weight: 400;
     font-style: normal;
+}
+header {
+    width: 100%;
+    height: 8rem;
+    /* background-color: var(--color-uno); */
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+ .header__img {
+    width: 18rem;
+    height: 5rem;
+    margin: 1rem 0 0 1rem;
+} 
+.header__menu {
+    margin-right:3rem ;
 }
