@@ -23,7 +23,7 @@ body {
     background-color: #A61B81;
 }
 .logo img {
-    width: 10rem;
+    width: 15rem;
     height: 5rem;
 }
 header{
@@ -95,15 +95,22 @@ header{
 
 #nav-cta{
     display: inline-block;
-    background-color: #fff;
+   /*  background-color: #fff;
     color: #313131;
     padding: 1rem 2rem;
-    border-radius: 2rem;
-    transition: background-color .5s ease;
+    border-radius: 2rem; */
+    /* transition: background-color .5s ease; */
 }
 
-#nav-cta:hover{
-    background-color: #d3d3d3;
+#nav-cta i:hover{
+    background-color: #A61B81;
+    padding: 1rem 1rem;
+    border-radius: .5rem; */
+}
+#nav-cta i {
+    font-size: 4rem;
+    transition: background-color .5s ease;
+    color: #fff;
 }
 
 
