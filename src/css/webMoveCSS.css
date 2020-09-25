@@ -20,4 +20,70 @@ body {
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--color-cuatro);
+}
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 0;
+    z-index: 999;
+}
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo {
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-base);
+    text-transform: uppercase;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 2.5rem;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    color: #fff;
+    transition: color .3s;
+}
+.nav-link:hover {
+    color: rgba(255, 255, 255, .5);
+}
+.shopping-bag {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transform: translateX(-2rem);
+}
+.bag-item-count {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-uno);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1rem;
+    right: -2rem;
 }
