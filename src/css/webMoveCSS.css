@@ -8,7 +8,7 @@ html {
 }
 :root {
     --color-base: #fff;
-    --color-base-2: #e3e3e3e;
+    --color-base-2: #000000;
     --color-uno:#D93D66;
     --color-dos: #A61B81;
     --color-tres: #D932BD;
@@ -20,7 +20,7 @@ body {
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--color-cuatro);
+    background-color: var(--color-base-2);
 }
 header {
     width: 100%;
@@ -86,4 +86,20 @@ header {
     position: absolute;
     top: -1rem;
     right: -2rem;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+}
+.circle-large {
+    bottom: -80rem;
+    right: -60rem;
 }
