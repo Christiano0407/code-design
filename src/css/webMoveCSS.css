@@ -103,3 +103,15 @@ header {
     bottom: -80rem;
     right: -60rem;
 }
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.text {
+    color: #fff;
+    flex: 1;
+    text-transform: uppercase;
+}
