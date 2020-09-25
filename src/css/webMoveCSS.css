@@ -45,7 +45,7 @@ header {
     font-size: 3rem;
     font-weight: 300;
     text-decoration: none;
-    color: var(--color-base);
+    color: var(--color-dos);
     text-transform: uppercase;
 }
 .nav-list {
@@ -114,4 +114,40 @@ header {
     color: #fff;
     flex: 1;
     text-transform: uppercase;
+}
+.text h1 {
+    font-size: calc(1rem + 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.text h1 span {
+color: var(--color-uno);
+}
+.text h5 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 8rem 0 4rem 0;
+}
+.text p {
+    text-transform: lowercase;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.cta {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-uno);
+    transition: background-color .5s;
+    border-radius: .5rem;
+}
+.cta:hover{
+    background-color: var(--color-tres);
+}
+.watch-wrapper {
+    flex: 0 0 45%;
 }
