@@ -78,4 +78,25 @@ section {
 }
 .content-text {
     flex: 1;
+    padding: 5rem;
+}
+.title {
+    font-size: 4rem;
+    color: var(--title-color);
+}
+.subtitle {
+ font-size: 1.4rem;
+ text-transform: uppercase;
+ font-weight: 400;
+ margin: .5rem 0 5rem;
+}
+.paragraph {
+ margin-bottom: 1.5rem;
+}
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid var(--body-color);
+    padding: 1rem 2.5rem;
+    margin-top: 2.5rem;
 }
