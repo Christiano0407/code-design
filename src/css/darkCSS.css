@@ -26,6 +26,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: var(--background-color);
+    transition: background-color 1s;
 }
 .dark-theme {
     --title-color: #fff;
@@ -89,6 +90,7 @@ section {
  text-transform: uppercase;
  font-weight: 400;
  margin: .5rem 0 5rem;
+ color: var(--body-color);
 }
 .paragraph {
  margin-bottom: 1.5rem;
