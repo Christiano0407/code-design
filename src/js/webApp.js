@@ -9,3 +9,9 @@ gsap.fromTo(`.text`,
 gsap.fromTo(`.watch-wrapper`, 
 { x: `30rem`, opacity: 0}, 
 { x: 0, opacity: 1, ease: `back.out(1.7)`, delay: 2.3});
+gsap.fromTo(`.circle-small`, 
+{ x: `30rem`, opacity: 0},
+{ x: 0, opacity: 1, ease: `back.out(1.7)`, delay: 1});
+gsap.fromTo(`.circle-large`, 
+{ x: `30rem`, opacity: 0},
+{ x: 0, opacity: 1, ease: `back.out(1.7)`, delay: 1.5});
