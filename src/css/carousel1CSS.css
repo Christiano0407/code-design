@@ -7,16 +7,16 @@ html {
     font-size: 62.5%
 }
 :root {
-     /* --color-base: #fff;
+     --color-base: #fff;
     --color-base-2: #000000;
     --color-uno:#D93D66;
     --color-dos: #A61B81;
     --color-tres: #D932BD;
-    --color-cuatro: #A5A4BF; */
-    --title-color: #333;
+    --color-cuatro: #A5A4BF; 
+   /*  --title-color: #333;
     --body-color: #696969;
     --background-color: #eee;
-    --foreground-color: #fff;
+    --foreground-color: #fff; */
     --blend-mode: normal;
 }
 body {
@@ -25,4 +25,36 @@ body {
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--color-tres);
+}
+.main {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.main__title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem auto;
+}
+.input {
+    border: 2px solid #fff;
+    border-radius: 2.5rem;
+    color: #fff;
+    font-size:1.6rem;
+    height: 5rem;
+    padding: 0 2rem;
+    width: 70%;
+    background-color: rgba(255, 255, 255, .1);
+    background-image: url(../img/search-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    background-position-x: 95%;
+}
+::placeholder {
+    color: #fff;
 }
