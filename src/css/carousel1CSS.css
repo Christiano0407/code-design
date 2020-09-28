@@ -58,3 +58,24 @@ body {
 ::placeholder {
     color: #fff;
 }
+/* CAROUSEL */
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 3rem;
+    position: relative;
+}
+.carousel__container {
+  white-space: nowrap;
+  margin: 7rem 0;
+  padding-bottom: 1rem;  
+}
+.carousel__item {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background-color: var(--color-base);
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+}
