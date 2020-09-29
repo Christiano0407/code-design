@@ -174,9 +174,11 @@ align-items: end;
 .movie-top .container-carousel .carousel .movie img {
     width: 100%;
     vertical-align: top;
-    width: 50rem;
-    height: 25rem;
+    width: 40rem;
+    height: 20rem;
 }
+
+
 /* MEDIA-QUERIES */
 @media screen and (max-width: 800px) {
     header .logo {
@@ -193,4 +195,9 @@ align-items: end;
     .principal-movie .description {
         max-width: 100%;
     }
+    /* .movie-top .indicators,
+.movie-top .left-arrow,
+.movie-top .right-arrow {
+    display: none;
+} */
 }
