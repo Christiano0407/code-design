@@ -52,3 +52,51 @@ header nav a:hover,
 header nav a.activo {
     color: #fff;
 }
+
+/* MOVIE-PRINCIPAL */
+.principal-movie {
+min-height: 45rem;
+font-size: 1.6rem;
+color: var(--color-base);
+background: linear-gradient(rgba(0,0,0,.50%) 0%, rgba(0,0,0,.50)100%), url(../img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: 3rem;
+display: flex;
+align-items: end;
+}
+.principal-movie .container {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.principal-movie .title {
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 0.4rem;
+}
+.principal-movie .description {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    max-width: 50%;
+    margin-bottom: 1.2rem;
+}
+.principal-movie .bottom {
+    background-color: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    color: var(--color-base);
+    margin-right: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.2rem;
+}
+.principal-movie .bottom:hover {
+    background-color: #fff;
+    color: #000;
+}
+.principal-movie .bottom i {
+    margin-right: 1.2rem;
+}
