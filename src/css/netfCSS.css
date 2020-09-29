@@ -9,11 +9,13 @@ font-size: 62.5%;
 :root {
     --color-base: #fff;
     --color-base-2: #000000;
-    --color-uno:#D93D66;
+    /* --color-uno:#D93D66;
     --color-dos: #A61B81;
     --color-tres: #D932BD;
-    --color-cuatro: #A5A4BF; 
+    --color-cuatro: #A5A4BF;  */
   /*   --blend-mode: normal; */
+  --color-red:#E50914;
+  --color-fondo:#141414;
 }
 body {
     width: 100%;
@@ -21,4 +23,32 @@ body {
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: var(--color-fondo);
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+header {
+    padding: 3rem 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--color-red);
+}
+header nav a {
+    color:#aaa;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+header nav a:hover, 
+header nav a.activo {
+    color: #fff;
 }
