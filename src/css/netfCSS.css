@@ -174,8 +174,9 @@ align-items: end;
 .movie-top .container-carousel .carousel .movie img {
     width: 100%;
     vertical-align: top;
-    width: 40rem;
-    height: 20rem;
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 

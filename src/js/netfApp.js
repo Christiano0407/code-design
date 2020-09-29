@@ -6,22 +6,36 @@ const rightArrow = document.getElementById(`right-arrow`);
 
 /* EVENT RIGHT-ARROW */
 rightArrow.addEventListener(`click`, () => {
-    file.scrollLeft += file.offsetWidth;
-
-    const indicatorActive = document.querySelector(`.indicators .activo`);
+    file.scrollLeft += file.offsetWidth; 
+                             /*  Ancho del carousel */
+    /* const indicatorActive = document.querySelector(`.indicators .activo`);
     if(indicatorActive.nextSibling) {
         indicatorActive.nextSibling.classList.add(`activo`);
         indicatorActive.classList.remove(`activo`);
-    }
+    } */
 })
 
 /* leftArrow EVENT */ 
 leftArrow.addEventListener(`click`, () => {
     file.scrollLeft -= file.offsetWidth;
     
-    const indicatorActive = document.querySelector(`.indicators .activo`);
+   /*  const indicatorActive = document.querySelector(`.indicators .activo`);
     if(indicatorActive.previousSibling) {
         indicatorActive.previousSibling.classList.add(`activo`);
         indicatorActive.classList.remove(`activo`);
-    }
+    } */
 })
+
+/* PAGINACIÓN */
+const numPage = Math.ceil(movies.length / 4);
+for(let i = 0; i < numPage; i ++) {
+    const indicators = document.createElement(`button`);
+
+    if(i === 0) {
+        indicators.classList.add(`activo`);
+    }
+        
+    document.querySelector(`.indicators`).appendChild(indicators);
+}
+
+/* HOVER */
