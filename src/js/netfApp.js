@@ -27,7 +27,7 @@ leftArrow.addEventListener(`click`, () => {
 })
 
 /* PAGINACIÓN */
-const numPage = Math.ceil(movies.length / 4);
+const numPage = Math.ceil(movies.length / 3);
 for(let i = 0; i < numPage; i ++) {
     const indicators = document.createElement(`button`);
 
@@ -36,6 +36,13 @@ for(let i = 0; i < numPage; i ++) {
     }
         
     document.querySelector(`.indicators`).appendChild(indicators);
+    indicators.addEventListener(`click`, (e) => {
+        file.scrollLeft = i * file.offsetWidth;
+
+        /* REMOVER-COLOR-RED-ACTIVO */
+        document.querySelector(`.indicators .activo`).classList.remove(`activo`);
+        e.target.classList.add(`activo`);
+    });
 }
 
 /* HOVER */
