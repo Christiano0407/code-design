@@ -8,22 +8,22 @@ const rightArrow = document.getElementById(`right-arrow`);
 rightArrow.addEventListener(`click`, () => {
     file.scrollLeft += file.offsetWidth; 
                              /*  Ancho del carousel */
-    /* const indicatorActive = document.querySelector(`.indicators .activo`);
+     const indicatorActive = document.querySelector(`.indicators .activo`);
     if(indicatorActive.nextSibling) {
         indicatorActive.nextSibling.classList.add(`activo`);
         indicatorActive.classList.remove(`activo`);
-    } */
+    } 
 })
 
 /* leftArrow EVENT */ 
 leftArrow.addEventListener(`click`, () => {
     file.scrollLeft -= file.offsetWidth;
     
-   /*  const indicatorActive = document.querySelector(`.indicators .activo`);
+     const indicatorActive = document.querySelector(`.indicators .activo`);
     if(indicatorActive.previousSibling) {
         indicatorActive.previousSibling.classList.add(`activo`);
         indicatorActive.classList.remove(`activo`);
-    } */
+    } 
 })
 
 /* PAGINACIÓN */
