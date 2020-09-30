@@ -86,9 +86,11 @@ width: 50%;
 }
 .carousel__previous {
     left: -3rem;
+    color: var(--color-base-2);
 }
 .carousel__next {
     right: -3rem;
+    color: var(--color-base-2);
 }
 .carousel__list {
     overflow: hidden;
