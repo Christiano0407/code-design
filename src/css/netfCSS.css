@@ -196,9 +196,9 @@ align-items: end;
     .principal-movie .description {
         max-width: 100%;
     }
-    /* .movie-top .indicators,
+ .movie-top .indicators,
 .movie-top .left-arrow,
 .movie-top .right-arrow {
     display: none;
-} */
+}
 }

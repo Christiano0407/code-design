@@ -46,3 +46,17 @@ for(let i = 0; i < numPage; i ++) {
 }
 
 /* HOVER */
+movies.forEach((movie) => {
+    movie.addEventListener(`mouseenter`, (e) => {
+        const element = e.currentTarget;
+        setTimeout(() => {
+         movies.forEach(movie => movie.classList.remove(`hover`));
+         element.classList.add(`hover`);
+        }, 300);
+    })
+})
+file.addEventListener(`mouseleave`, () => {
+    movies.forEach(movie => movie.classList.remove(`hover`));
+})
+
+CAROUSEL-TWO
