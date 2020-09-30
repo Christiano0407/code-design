@@ -59,4 +59,4 @@ file.addEventListener(`mouseleave`, () => {
     movies.forEach(movie => movie.classList.remove(`hover`));
 })
 
-CAROUSEL-TWO
+/* CAROUSEL-TWO */
