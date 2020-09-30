@@ -1,4 +1,4 @@
-/* window.addEventListener('load', function(){
+ window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__list'), {
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -26,4 +26,5 @@
 			}
 		]
 	});
-}); */
+}); 
+
