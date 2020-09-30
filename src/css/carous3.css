@@ -19,9 +19,44 @@ font-size: 62.5%;
 }
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family: neue-haas-unica,sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--color-fondo);
+    /* background-color: var(--color-fondo); */
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: auto;
+}
+
+/* PRINCIPAL-CONTAINER */
+.principal-container {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+  /*   background-color: #fff; */
+}
+.principal-container__image {
+    vertical-align: top;
+    margin-right: 2rem;
+    width: 50%;
+    max-width: 55.5rem;
+}
+.principal-container__container {
+width: 50%;
+}
+.principal-container__title {
+    font-weight: normal;
+    font-size: 2.8rem;
+    text-align: center;
+   /*  color: #fff; */
+}
+.principal-container__resume {
+    line-height: 2rem;
+    /* color: #fff; */
+    font-size: 1.2rem;
 }
