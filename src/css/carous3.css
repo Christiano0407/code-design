@@ -60,3 +60,68 @@ width: 50%;
     /* color: #fff; */
     font-size: 1.2rem;
 }
+
+/* CAROUSEL */
+.carousel__container {
+    position: relative;
+}
+.carousel__previous,
+.carousel__next {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    top: calc(50% - 3.5rem);
+    cursor: pointer;
+    line-height: 3rem;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+.carousel__previous:hover,
+.carousel__next:hover {
+    opacity: 100%;
+}
+.carousel__previous {
+    left: -3rem;
+}
+.carousel__next {
+    right: -3rem;
+}
+.carousel__list {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__element {
+    text-align: center;
+}
+ .carousel__element img {
+    width: 100%;
+    vertical-align: top;
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+} 
+.carousel__indicators .glider-dot:hover {
+    opacity: .5;
+}
+.carousel__indicators .glider-dot:active{
+    opacity: 1;
+}
+
+    /* RESPONSIVE */
+@media screen and (max-width: 800px) {
+    body {
+        padding: 4rem 0;
+    }
+    .principal-container {
+        flex-direction: column;
+    }
+    .principal-container > * {
+        width: 100%;
+    }
+}
