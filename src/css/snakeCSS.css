@@ -17,3 +17,20 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.grid{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+}
+.grid div {
+    width: 2rem;
+    height: 2rem;
+}
+.snake {
+    background-color: blue;
+}
+.apple {
+    background-color: purple;
+}
