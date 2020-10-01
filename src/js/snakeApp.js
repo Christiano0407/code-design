@@ -1,4 +1,4 @@
-//Detector de eventos
+/* //Detector de eventos
 document.addEventListener(`DOMContentLoaded`, () => {
     const squares = document.querySelectorAll(`.grid div`);
     const scoreDisplay = document.querySelector(`span`);
@@ -79,11 +79,11 @@ function control(e) {
 
     document.addEventListener(`keyup`, control)
     startBtn.addEventListener(`click`, startGame)
-}
+} */
 
 
 /* ORIGINAL ----------------- */
-/* document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div')
     const scoreDisplay = document.querySelector('span')
     const startBtn = document.querySelector('.start')
@@ -176,4 +176,4 @@ function control(e) {
   
     document.addEventListener('keyup', control)
     startBtn.addEventListener('click', startGame)
-  }) */
+  })
