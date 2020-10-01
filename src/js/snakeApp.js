@@ -32,7 +32,36 @@ function startGame(){
 }
 
 //function that deals with all the ove outcomes of the snake
+function moveOutcomes(){
 
+    //deals with snake hitting border and snake hitting self
+    if(
+    (currentSnake[0] + width >=0 (width * width) && direction === width) || //if snake hits bottom
+    (currentSnake[0] % width === width -1 && direction === 1) || //if snake hits right wall
+    (currentSnake[0] % width === 0 && direction -1) || //if snake hits left wall
+    (currentSnake[0] - width < 0 && direction === -width)|| //if snake hits the top
+    squares[currentSnake[0] + direction].classList.contains(`snake`)//if snake goes into itself
+    ) {
+    return clearInterval(interval) //this will clear the interval
+    }
+
+    const tail = currentSnake.pop() // remove lats ite of the array and shows
+    squares[tail].classList.remove(`snake`)
+    currentSnake.unshift(currentSnake[0] + direction)
+    //deals with snake getting apple
+    if(squares[currentSnake[0]].classList.contains(`apple`)) {
+        squares[currentSnake[0]].classList.remove(`apple`)
+        squares[tail].classList.add(`snake`)
+        currentSnake.push(tail)
+        //randomApple()
+        score++
+        scoreDisplay.textContent = score
+        clearInterval(interval)
+        intervalTime = intervalTime * speed
+        interval = setInterval(moveOutcomes, intervalTime)
+    }
+    squares[currentSnake[0]].classList.add(`snake`)
+}
 
 //assign function  to keycode
 function control(e) {
