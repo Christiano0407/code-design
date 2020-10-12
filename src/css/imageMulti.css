@@ -25,11 +25,26 @@ body {
     display: flex; 
 }
 .gallery-item {
+    display: flex;
     flex: 1;
     padding: 2.5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, .6);
+    z-index: -1;
 }
 .gallery-item:hover {
     flex: 5;
@@ -41,14 +56,34 @@ body {
     background-image: url(../img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
 }
 .item-3 {
-    background-image: url(../img/daniel-korpai-o1utz9Neufo-unsplash.jpg);
+    background-image: url(../img/aud1.jpg);
 }
 .item-4 {
-    background-image: url(../img/daniel-korpai-lTb4gJK_l1Q-unsplash.jpg);
+    background-image: url(../img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
 }
 .item-5 {
-    background-image: url(../img/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+    background-image: url(../img/aud1.jpg);
 }
 .item-6 {
-    background-image: url(../img/codde.jpg);
+    background-image: url(../img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
+}
+
+.description-wrapper {
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.name {
+    font-size: 4rem;
+    background-color: #fff;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+.position-title {
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0,0, .2);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
 }
