@@ -20,3 +20,35 @@ body {
     font-weight: 600;
     font-style: normal;
 }
+.gallery-wrapper {
+    height: 100vh;
+    display: flex; 
+}
+.gallery-item {
+    flex: 1;
+    padding: 2.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-item:hover {
+    flex: 5;
+}
+.item-1 {
+    background-image: url(../img/aud1.jpg);
+}
+.item-2 {
+    background-image: url(../img/kyle-smith-4qYHqQqlwM4-unsplash.jpg);
+}
+.item-3 {
+    background-image: url(../img/daniel-korpai-o1utz9Neufo-unsplash.jpg);
+}
+.item-4 {
+    background-image: url(../img/daniel-korpai-lTb4gJK_l1Q-unsplash.jpg);
+}
+.item-5 {
+    background-image: url(../img/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+}
+.item-6 {
+    background-image: url(../img/codde.jpg);
+}
