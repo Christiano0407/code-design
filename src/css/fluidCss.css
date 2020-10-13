@@ -41,10 +41,29 @@ body {
 }
 .modal {
     background: rgba(0, 0, 0, 0.9);
-    opacity: 0.6;
+    /* opacity: 0.6; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+.modal p {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform:translate(-50%, -5%);
+}
+.full-img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+}
+.full-img-open {
+    transform: translate(-50%, -50%) scale(1);
 }
