@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --color-base:#fff;
+    --color-black: #000000;
+    --color-one: #020540;
+    --color-two: #6BE5F2;
+    --color-three: #72F29F;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: myriad-pro,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
